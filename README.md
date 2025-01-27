@@ -64,7 +64,7 @@ Ici, vous devez redéfinir la position de la balle pour qu'elle soit centrée en
 ~~Si le joueur 2 a gagné un point, relancer la balle de son côté (à la gauche) avec une direction aléatoire en y (par en haut ou par en bas).~~
 ~~Si le joueur 1 a gagné un point, relancer la balle de son côté (à la droite) avec une direction aléatoire en y (par en haut ou par en bas).~~
 
-**Correction** :  
+:heavy_exclamation_mark: **Correction** :  
 :red_circle: Si le joueur 2 a gagné un point, relancer la balle de son côté (à la droite) avec une direction aléatoire en y (par en haut ou par en bas).
 :red_circle: Si le joueur 1 a gagné un point, relancer la balle de son côté (à la gauche) avec une direction aléatoire en y (par en haut ou par en bas).
 
@@ -92,7 +92,7 @@ Le mouvement de la raquette du joueur 2 doit être contrôlé par les flèches `
      ~~- 90% du temps, "margin" doit être égale à 40~~
      ~~- 10% du temps, "margin" doit être égale à 20~~
 
-**Correction** :  
+:heavy_exclamation_mark: **Correction** :  
    :red_circle: - 90% du temps, "margin" doit être égale à 20</span>  
    :red_circle: - 10% du temps, "margin" doit être égale à 40</span>
 
