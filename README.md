@@ -63,6 +63,7 @@ Ici, vous devez redéfinir la position de la balle pour qu'elle soit centrée en
 #### 2.2 : Réinitialisation de la position de la balle en y 
 ~~Si le joueur 2 a gagné un point, relancer la balle de son côté (à la gauche) avec une direction aléatoire en y (par en haut ou par en bas).~~
 ~~Si le joueur 1 a gagné un point, relancer la balle de son côté (à la droite) avec une direction aléatoire en y (par en haut ou par en bas).~~
+
 **Correction** :  
 :red_circle: Si le joueur 2 a gagné un point, relancer la balle de son côté (à la droite) avec une direction aléatoire en y (par en haut ou par en bas).
 :red_circle: Si le joueur 1 a gagné un point, relancer la balle de son côté (à la gauche) avec une direction aléatoire en y (par en haut ou par en bas).
@@ -90,6 +91,7 @@ Le mouvement de la raquette du joueur 2 doit être contrôlé par les flèches `
 - Afin de rendre les mouvements de l'adversaire un peu plus vraisemblables, vous devez également ajouter une variable nommée `margin` à la position du centre de la raquette. De cette façon, le centre de la raquette de l'adversaire suivra le mouvement de la balle, mais avec un léger décalage. La valeur de la variable `margin` doit varier de façon aléatoire, c'est-à-dire : 
      ~~- 90% du temps, "margin" doit être égale à 40~~
      ~~- 10% du temps, "margin" doit être égale à 20~~
+
 **Correction** :  
    :red_circle: - 90% du temps, "margin" doit être égale à 20</span>  
    :red_circle: - 10% du temps, "margin" doit être égale à 40</span>
