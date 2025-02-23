@@ -23,12 +23,20 @@ def reset_ball(ball_x, ball_y, ball_velocity_x, ball_velocity_y):
     # TODO : RÉINITIALISER LA POSITION DE LA BALLE AU CENTRE DU JEU
     # Ici, vous devez redéfinir la position de la balle pour qu'elle soit au centre de la fenêtre du jeu en x (c'est-à-dire, sur la ligne pointillée)
 
+    ball_x = SCREEN_WIDTH//2
+    ball_y = random.randint ([0, SCREEN_HEIGHT])
 
     # TODO : LANCEMENT DE LA BALLE APRÈS RÉINITIALISATION
     # Si le joueur 2 a gagné un point, relancer la balle de son côté (à la gauche) avec une position aléatoire en y (par en haut ou par en bas), à partir de la ligne pointillée
     # Si le joueur 1 a gagné un point, relancer la balle de son côté (à la droite) avec une position aléatoire en y (par en haut ou par en bas), à partir de la ligne pointillée
 
-    return ball_x, ball_y, ball_velocity_x, ball_velocity_y
+#   if player1_score == player1_score + 1:
+#
+#        ball_velocity_x = random.choice(ball_velocity_x)
+#       ball_velocity_y = BALL_SPEED_Y
+
+    return ball_x, ball_y, ball_velocity_x,
+    ball_velocity_y
 
 def play_game(player1_y, player2_y, player1_score, player2_score, ball_x, ball_y, ball_velocity_x, ball_velocity_y):
     """
@@ -80,8 +88,19 @@ def play_game(player1_y, player2_y, player1_score, player2_score, ball_x, ball_y
         # * Note 3 : Lorsque les raquettes atteignent le haut ou le bas de la fenêtre de jeu, elles ne doivent pas dépasser ces limites. 
         #          Assurez-vous que leur position reste dans les bornes définies par la hauteur de l'écran.
 
-
-
+        if keys[pygame.K_w]:
+            if player1_y > 0:
+                player1_y = player1_y - paddle_speed
+        if keys[pygame.K_s]:
+            if player1_y <= SCREEN_HEIGHT:
+                player1_y = player1_y + paddle_speed
+        
+        if keys[pygame.K_UP]:
+            if player2_y > 0:
+                player2_y = player2_y - paddle_speed
+        if keys[pygame.K_DOWN]:
+            if player2_y <= SCREEN_HEIGHT:
+                player2_y = player2_y + paddle_speed
 
 
         # TODO : IMPLÉMENTATION DU MOUVEMENT DES RAQUETTES POUR L'OPTION "SINGLE PLAYER"
@@ -103,6 +122,13 @@ def play_game(player1_y, player2_y, player1_score, player2_score, ball_x, ball_y
         #     - Pour le niveau "medium", la vitesse de déplacement de la raquette doit être égale à "paddle_speed - 4"
         #     - Pour le niveau "hard", la vitesse de déplacement de la raquette doit être égale à "paddle_speed"
 
+        if keys[pygame.K_w]:
+            if player1_y > 0:
+                player1_y = player1_y - paddle_speed
+        if keys[pygame.K_s]:
+            if player1_y <= SCREEN_HEIGHT:
+                player1_y = player1_y + paddle_speed
+        
         
         
 
