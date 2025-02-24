@@ -28,5 +28,4 @@ ball_velocity_y = random.choice([-BALL_SPEED_Y, BALL_SPEED_Y]) # Remplacer "0" p
 
 # Boucle du jeu
 while True:
-    play_game(player1_y, player2_y, player1_score, player2_score, ball_x, ball_y, ball_velocity_x, ball_velocity_y) 
-  
+    play_game(player1_y, player2_y, player1_score, player2_score, ball_x, ball_y, ball_velocity_x, ball_velocity_y)
